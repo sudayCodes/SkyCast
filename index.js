@@ -122,7 +122,7 @@ let pressure_ =document.querySelector(".pressure");
 function weather_search(){
     
 fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=f89611c341f845eab4695117241712&q=${city_}&days=1&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=f89611c341f845eab4695117241712&q=${city_}&days=1&aqi=no&alerts=no`
 ) 
 .then((res) => {
     return res.json();
