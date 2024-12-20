@@ -10,16 +10,16 @@ body {
     width: 100%;
     z-index: 1030; /* Bootstrap default */
 }
-.box a{
+#box a{
     position: relative;
     color: green; /* Original text color */
     text-decoration: none;
     transition: color 0.5s ease;
 }
-.box a:hover{
+#box a:hover{
     color: black;
 }
-.box a::after {
+#box a::after {
     content: "";
     position: absolute;
     width: 0;
@@ -29,14 +29,22 @@ body {
     background-color: black;
     transition: width 0.9s ease;
   }
-  .box a:hover::after {
+  #box a:hover::after {
 width: 100%;
   }
 
-.box {
+#box {
    margin-left: 800px;
 }
 
+.navbar-toggler {
+    width: auto; /* Ensure it doesn't stretch */
+    z-index: 1050; /* Bring it to the front */
+  }
+  
+  .navbar-collapse {
+    transition: height 0.3s ease; /* Add smooth transition */
+  }
 .container-fluid{
     margin-top: 0px;
     position:relative;
